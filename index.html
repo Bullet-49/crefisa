@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://fdr.com.br/wp-content/uploads/2021/05/crefisa-750x416.jpg"
+        type="image/x-icon">
+    <title>Crefisa</title>
+</head>
+
+<body>
+
+    <div id="style">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/a/a3/Crefisa.png" alt="title">
+        <div id="botoes">
+            <p>O que você deseja fazer ?</p>
+
+
+            <button id="retirada" onclick="Bretirada()">Retirada</button>
+            <button id="Deposito" onclick="Bdeposito()">Deposito</button>
+            <button id="consultar" onclick="consulta()">Consultar Saldo</button> <br><br>
+        </div>
+
+        <div class="abaixoDbotoes" id="remover">
+            <div id="retiradaD">
+                <label for="vretirada">Informe quanto você deseja retirar</label> <br>
+                <input type="number" id="vretirada">
+                <button class="movimantacao" onclick="Vretirada()">Retirar</button>
+            </div>
+
+
+            <div id="depositoD">
+                <label for="vdepositar">Informe quanto você deseja depositar</label> <br>
+                <input type="number" id="vdepositar">
+                <button class="movimantacao" onclick="Vdeposito() ">Depositar</button>
+            </div>
+            <br>
+        </div>
+        <br>
+
+        <span id="text" class="textC"></span>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
